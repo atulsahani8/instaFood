@@ -1,0 +1,18 @@
+
+
+.custom-carousel .carousel-inner {
+    display: flex;
+    align-items: center; /* Center images vertically */
+  }
+  
+  .custom-carousel .carousel-item {
+    flex: 0 0 auto; /* Prevent images from stretching */
+    width: 100%; /* Ensure images take full width */
+    height: auto;
+  }
+  
+  .custom-carousel .carousel-item img {
+    max-width: 100%;
+    height: auto; 
+  }
+  
