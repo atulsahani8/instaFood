@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Signup.scss"
 
 const Signup = () => {
   const [credentials, setCredentials] = useState({
@@ -46,7 +47,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container1">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
@@ -56,6 +57,7 @@ const Signup = () => {
             type="text"
             className="form-control"
             name="name" // Provide the name attribute
+            placeholder="John Doe"
             value={credentials.name}
             onChange={onChange}
           />
@@ -68,6 +70,7 @@ const Signup = () => {
             type="email"
             className="form-control"
             name="email" // Provide the name attribute
+            placeholder="johndoe@hotmail.com"
             value={credentials.email}
             onChange={onChange}
           />
@@ -83,6 +86,7 @@ const Signup = () => {
             type="password"
             className="form-control"
             name="password" // Provide the name attribute
+            placeholder="password"
             value={credentials.password}
             onChange={onChange}
           />
@@ -95,18 +99,19 @@ const Signup = () => {
             type="text"
             className="form-control"
             name="geolocation"
+            placeholder="Los Angeles street 69, USA."
             value={credentials.geolocation}
             onChange={onChange}
           />
         </div>
 
-        <div className="mb-3 form-check">
+        {/* <div className="mb-3 form-check">
           <input
             type="checkbox"
             className="form-check-input"
             id="exampleCheck1"
           />
-        </div>
+        </div> */}
         <button type="submit" className="m-3 btn btn-success">
           Submit
         </button>

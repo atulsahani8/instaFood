@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container1">
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
@@ -59,6 +59,7 @@ const Login = () => {
               type="email"
               className="form-control"
               name="email" // Provide the name attribute
+              placeholder="johndoe@hotmail.com"
               value={credentials.email}
               onChange={onChange}
             />
@@ -74,6 +75,7 @@ const Login = () => {
               type="password"
               className="form-control"
               name="password" // Provide the name attribute
+              placeholder="Password"
               value={credentials.password}
               onChange={onChange}
             />
